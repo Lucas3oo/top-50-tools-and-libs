@@ -7,14 +7,14 @@ Tools and libs are mosty for Java but some are more generic.
 ## Tools
 
 ### Gradle plugins
-#### jib-gradle-plugin - https://github.com/GoogleContainerTools/jib/
+#### jib-gradle-plugin
 Containerize your Java application.
 Gradle plugin to create Docker images without having to write a Dockerfile. The apps dependencies will be in a separate layer to save some space.
+https://github.com/GoogleContainerTools/jib/
 
 #### OWASP dependency-check-gradle plugin
-http://jeremylong.github.io/DependencyCheck/dependency-check-gradle/index.html
-
 Check your third party libs (Java and Node) for known vulnerabilities.
+http://jeremylong.github.io/DependencyCheck/dependency-check-gradle/index.html
 
 #### SpotBugs
 Static code analyser
@@ -28,8 +28,9 @@ Static code analyser
 Code coverage
 
 ### OWASP Zap
-### Trivy -https://aquasecurity.github.io/trivy/v0.37/
+### Trivy
 Scan Docker images for known vulnerabilities.
+https://aquasecurity.github.io/trivy/v0.37/
 
 ### AWS Cloudformation
 #### cfn-lint
@@ -51,10 +52,13 @@ Mutation testing, how good are your unit test really? - https://pitest.org
 ### Debezium
 Distributed platform for change data capture - https://debezium.io
 
-## Designer frameworks
+## Design patters/frameworks
 ### Secure coding
 https://www.oracle.com/java/technologies/javase/seccodeguide.html
 
 https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf
 
+### System desing
+* The Twelve-factor app - https://12factor.net
+* AWS well architected - https://aws.amazon.com/architecture/well-architected
 
