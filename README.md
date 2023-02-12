@@ -37,6 +37,9 @@ Built into Gradle.
 Deploy Cloudformation templates and handle environment properties from Gradle.
 https://plugins.gradle.org/plugin/se.solrike.cloudformation
 
+#### AWS S3 Gradle plugin
+https://plugins.gradle.org/plugin/seek.aws
+
 ### Security tools
 #### OWASP Zap
 Web app scanner and DAST (Dynamic Application Security Testing). 
@@ -47,11 +50,16 @@ Scan Docker images for known vulnerabilities.
 * Blog post about Trivy: https://www.linkedin.com/pulse/vulnerability-scanning-docker-images-lucas-persson/
 * https://aquasecurity.github.io/trivy/v0.37/
 
+#### NVD Tool
+Check your third party libs and OTS software for known vulnerabilities in the NVD feeds. For instance version 8 of MySQL or Java 17.
+https://github.com/facebookincubator/nvdtools
+
 ### AWS Cloudformation
-#### cfn-lint
-Linter for Cloudformation templates - https://github.com/aws-cloudformation/cfn-lint
-#### cnf_nag
-Linter for Cloudformation templates - https://github.com/stelligent/cfn_nag
+#### Linters for Cloudformation templates
+* https://github.com/aws-cloudformation/cfn-lint
+* https://github.com/stelligent/cfn_nag
+#### Deploy Cloudformation templates from Gradle
+* https://plugins.gradle.org/plugin/se.solrike.cloudformation
 
 ### DB Tools
 #### Flyway
@@ -79,23 +87,29 @@ https://github.com/zalando/logbook
 Web app framwork for microservices. https://spring.io
 * Spring data - Layer on top of JPA
 * Spring data projections -  Generate DTOs directly from the SQL query 
+
 ### Micronaut
 Like Spring Boot but doesn't use reflection so the slow start you can get in Spring Boot will not be there.
 https://micronaut.io
+
+### Mapstruct
+Mapping between DTOs and entities. Uses annotation processing and integrates nicly with Spring. https://mapstruct.org
 
 ### Debezium
 Distributed platform for change data capture. E.g. write once to DB to update a record and propagate an update event to Kafak. But it works with AWS Kinesis to with some extra work.
 * https://debezium.io
 * Debezium for MySQL: https://debezium.io/documentation/reference/2.1/connectors/mysql.html
 * Debezium for AWS Kinesis: https://debezium.io/blog/2018/08/30/streaming-mysql-data-changes-into-kinesis/
+
 ### Redis
 Cache which also has pub/sub. Integrates directly into Spring as a cache or as a HTTP session store. https://redis.io
+
 ### ELK stack
 Search and visualize your log streams in a jiffy with ELK.
 * ElasticSearch, Kibana, Logstash - https://www.elastic.co/what-is/elk-stack
 
 ### AWS Parameter Store
-Read the config properties from a central location instead oh having ENV-vars or configuration files. Works with e.g. Spring Boot.
+Read the config properties from a central location instead of having ENV-vars or configuration files. Works with e.g. Spring Boot.
 * https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-working-with.html
 * Spring cloud AWS and Parameter store: https://docs.spring.io/spring-cloud-aws/docs/2.2.3.RELEASE/reference/html/#integrating-your-spring-cloud-application-with-the-aws-parameter-store
 
@@ -111,7 +125,7 @@ Distributed tracing framwork for your app to see how the app is interacting with
 * Docker compose Gradle plugin:  https://plugins.gradle.org/plugin/com.avast.gradle.docker-compose
 
 ### Unit testing
-* Fluent assertions java library - https://assertj.github.io/doc/
+* AssertJ - Fluent assertions java library, nicer than Hamcrest - https://assertj.github.io/doc/
 * Tasty mocking framework for unit tests in Java - https://site.mockito.org
 * Testing asynchronous systems - http://www.awaitility.org
 * Mutation testing, how good are your unit test really? - https://pitest.org
@@ -120,6 +134,12 @@ Distributed tracing framwork for your app to see how the app is interacting with
 Spin up any container inside your "unit tests" like a MySQL or Redis.
 https://www.testcontainers.org
 
+### Run AWS locally
+Localstack emulate the cloud locally https://localstack.cloud. Some services are free some not.
+
+AWS DynamoDB is possible to run locally without using Localstack: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
+
+AWS S3 proxy which also emulates Azure storage accounts and other "flavors". https://github.com/gaul/s3proxy
 
 ## Design patters/frameworks
 ### Secure coding
