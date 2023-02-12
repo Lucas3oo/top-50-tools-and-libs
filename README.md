@@ -4,6 +4,8 @@ Curated list of tools and libs for software engineering.
 The list containes development, build and security tools, and libraries for different uses cases.
 Tools and libs are mosty for Java but some are more generic.
 
+Version: 1.0.0
+
 ## Tools
 
 ### Gradle plugins
@@ -156,3 +158,7 @@ AWS S3 proxy which also emulates Azure storage accounts and other "flavors". htt
 * The Twelve-factor app - https://12factor.net
 * AWS well architected - https://aws.amazon.com/architecture/well-architected
 
+### Misc
+* Semantic Versioning 2.0.0 - https://semver.org
+* Comments in code - https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/
+* A collection of full-stack resources for programmers - https://github.com/charlax/professional-programming (this one will keep you busy for weeks)
