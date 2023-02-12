@@ -80,15 +80,18 @@ Web app framwork for microservices. https://spring.io
 * Spring data - Layer on top of JPA
 * Spring data projections -  Generate DTOs directly from the SQL query 
 ### Micronaut
-Like Spring Boot but doesn't use reflection.
+Like Spring Boot but doesn't use reflection so the slow start you can get in Spring Boot will not be there.
 https://micronaut.io
 
 ### Debezium
-Distributed platform for change data capture - https://debezium.io
+Distributed platform for change data capture. E.g. write once to DB to update a record and propagate an update event to Kafak. But it works with AWS Kinesis to with some extra work.
+* https://debezium.io
+* Debezium for MySQL: https://debezium.io/documentation/reference/2.1/connectors/mysql.html
+* Debezium for AWS Kinesis: https://debezium.io/blog/2018/08/30/streaming-mysql-data-changes-into-kinesis/
 ### Redis
-Cache which also has pub/sub. Integrates directly into Spring.
+Cache which also has pub/sub. Integrates directly into Spring as a cache or as a HTTP session store. https://redis.io
 ### ELK stack
-Search and visualize your log files in a jiffy with ELK.
+Search and visualize your log streams in a jiffy with ELK.
 * ElasticSearch, Kibana, Logstash - https://www.elastic.co/what-is/elk-stack
 
 ### AWS Parameter Store
@@ -114,7 +117,7 @@ Distributed tracing framwork for your app to see how the app is interacting with
 * Mutation testing, how good are your unit test really? - https://pitest.org
 
 ### Testcontainers 
-Spin up any container inside your "unit tests" like a MySQL DB or Redis.
+Spin up any container inside your "unit tests" like a MySQL or Redis.
 https://www.testcontainers.org
 
 
