@@ -70,7 +70,7 @@ Java logging framework.
 * https://www.slf4j.org
 * https://logback.qos.ch
 * Supports MDC (Mapped Diagnostic Context) https://logback.qos.ch/manual/mdc.html
-* Format the log record to JSON and send it to the ELK stack: https://github.com/logfellow/logstash-logback-encoder
+* Format the log record to JSON and send it to the ELK stack, supports MDC: https://github.com/logfellow/logstash-logback-encoder
 ### Logbook
 Logging of http requests.
 https://github.com/zalando/logbook
@@ -92,7 +92,9 @@ Search and visualize your log files in a jiffy with ELK.
 * ElasticSearch, Kibana, Logstash - https://www.elastic.co/what-is/elk-stack
 
 ### AWS Parameter Store
-Read the config properties from a central location instead oh having ENV-vars or configuration files. Works with e.g. Sprign Boot.
+Read the config properties from a central location instead oh having ENV-vars or configuration files. Works with e.g. Spring Boot.
+* https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-working-with.html
+* Spring cloud AWS and Parameter store: https://docs.spring.io/spring-cloud-aws/docs/2.2.3.RELEASE/reference/html/#integrating-your-spring-cloud-application-with-the-aws-parameter-store
 
 ### AWS X-Ray
 Distributed tracing framwork for your app to see how the app is interacting with AWS services and other custom services.
