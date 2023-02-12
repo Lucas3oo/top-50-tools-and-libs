@@ -87,14 +87,11 @@ Cache which also has pub/sub. Integrates directly into Spring.
 ### AWS Parameter Store
 Read the config properties from a central location instead oh having ENV-vars or configuration files. Works with e.g. Sprign Boot.
 
-### AssertJ
-Fluent assertions java library - https://assertj.github.io/doc/
-### Mockito
-Tasty mocking framework for unit tests in Java - https://site.mockito.org
-### Awaitility
-Testing asynchronous systems - http://www.awaitility.org
-### PIT
-Mutation testing, how good are your unit test really? - https://pitest.org
+### Unit testing
+* Fluent assertions java library - https://assertj.github.io/doc/
+* Tasty mocking framework for unit tests in Java - https://site.mockito.org
+* Testing asynchronous systems - http://www.awaitility.org
+* Mutation testing, how good are your unit test really? - https://pitest.org
 
 ## Design patters/frameworks
 ### Secure coding
