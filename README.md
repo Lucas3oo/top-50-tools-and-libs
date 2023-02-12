@@ -155,6 +155,7 @@ AWS S3 proxy which also emulates Azure storage accounts and other "flavors". htt
 * https://www.sans.org/top25-software-errors/
 
 ### System desing
+* https://github.com/donnemartin/system-design-primer
 * The Twelve-factor app - https://12factor.net
 * AWS well architected - https://aws.amazon.com/architecture/well-architected
 
@@ -162,3 +163,4 @@ AWS S3 proxy which also emulates Azure storage accounts and other "flavors". htt
 * Semantic Versioning 2.0.0 - https://semver.org
 * Comments in code - https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/
 * A collection of full-stack resources for programmers - https://github.com/charlax/professional-programming (this one will keep you busy for weeks)
+* https://github.com/kamranahmedse/developer-roadmap
