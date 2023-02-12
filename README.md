@@ -38,7 +38,11 @@ Deploy Cloudformation templates and handle environment properties from Gradle.
 https://plugins.gradle.org/plugin/se.solrike.cloudformation
 
 #### AWS S3 Gradle plugin
+For instance upload a JAR to an S3 bucket.
 https://plugins.gradle.org/plugin/seek.aws
+
+#### Access git from Gradle
+https://plugins.gradle.org/plugin/org.ajoberstar.grgit
 
 ### Security tools
 #### OWASP Zap
@@ -77,8 +81,8 @@ https://www.openssl.org
 Java logging framework. 
 * https://www.slf4j.org
 * https://logback.qos.ch
-* Supports MDC (Mapped Diagnostic Context) https://logback.qos.ch/manual/mdc.html
-* Format the log record to JSON and send it to the ELK stack, supports MDC: https://github.com/logfellow/logstash-logback-encoder
+* Supports MDC (Mapped Diagnostic Context) - https://logback.qos.ch/manual/mdc.html
+* Format the log record to JSON and send it to the ELK stack, supports MDC - https://github.com/logfellow/logstash-logback-encoder
 ### Logbook
 Logging of http requests.
 https://github.com/zalando/logbook
@@ -128,14 +132,14 @@ Distributed tracing framwork for your app to see how the app is interacting with
 * AssertJ - Fluent assertions java library, nicer than Hamcrest - https://assertj.github.io/doc/
 * Tasty mocking framework for unit tests in Java - https://site.mockito.org
 * Testing asynchronous systems - http://www.awaitility.org
-* Mutation testing, how good are your unit test really? - https://pitest.org
+* Mutation testing, how good are your unit tests really? - https://pitest.org
 
 ### Testcontainers 
 Spin up any container inside your "unit tests" like a MySQL or Redis.
 https://www.testcontainers.org
 
 ### Run AWS locally
-Localstack emulate the cloud locally https://localstack.cloud. Some services are free some not.
+Localstack emulate the cloud locally https://localstack.cloud. Some services are free, some not.
 
 AWS DynamoDB is possible to run locally without using Localstack: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
 
