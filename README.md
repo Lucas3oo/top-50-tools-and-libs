@@ -1,7 +1,7 @@
 # top-50-tools-and-libs
 Curated list of tools and libs for software engineering. 
 
-The list containes development, build and security tools, and libraries different uses cases.
+The list containes development, build and security tools, and libraries for different uses cases.
 Tools and libs are mosty for Java but some are more generic.
 
 ## Tools
