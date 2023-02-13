@@ -84,7 +84,7 @@ Java logging framework.
 * https://www.slf4j.org
 * https://logback.qos.ch
 * Supports MDC (Mapped Diagnostic Context) - https://logback.qos.ch/manual/mdc.html
-* Format the log record to JSON and send it to the ELK stack, supports MDC - https://github.com/logfellow/logstash-logback-encoder
+* Format the log record to JSON and send it to the ELK stack, supports MDC. Works both as logback appender and also useful as an encoder. - https://github.com/logfellow/logstash-logback-encoder
 ### Logbook
 Logging of http requests.
 https://github.com/zalando/logbook
@@ -115,7 +115,7 @@ Search and visualize your log streams in a jiffy with ELK.
 * ElasticSearch, Kibana, Logstash - https://www.elastic.co/what-is/elk-stack
 
 ### AWS Parameter Store
-Read the config properties from a central location instead of having ENV-vars or configuration files. Works with e.g. Spring Boot.
+Read the config properties from a central location instead of having ENV-vars or configuration files. Works with e.g. Spring Boot. Particulary useful when you run Spring in as a contiainer and you need to have configuration externalized.
 * https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-working-with.html
 * Spring cloud AWS and Parameter store: https://docs.spring.io/spring-cloud-aws/docs/2.2.3.RELEASE/reference/html/#integrating-your-spring-cloud-application-with-the-aws-parameter-store
 
@@ -141,11 +141,23 @@ Spin up any container inside your "unit tests" like a MySQL or Redis.
 https://www.testcontainers.org
 
 ### Run AWS locally
-Localstack emulate the cloud locally https://localstack.cloud. Some services are free, some not.
+Localstack emulate the AWS cloud locally https://localstack.cloud. Some services are free, some not. Basically your start the "localstack" in Docker and you will have to configure/override the AWS endpoints to point to 127.0.0.1 instead. Free services:
+* Lambda, API Gateway V1
+* S3
+* CloudWatch, EventBridge
+* Kinesis, DynamoDB, DynamoDB Streams
+* KMS, STS
+* SES, SNS, SQS
+
+Payed:
+* RDS, API Gateway V2, Cognito, ElastiCache, Kinesis, Kinesis Data Analytics
+* EKS, ECR, ECS
 
 AWS DynamoDB is possible to run locally without using Localstack: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
 
 AWS S3 proxy which also emulates Azure storage accounts and other "flavors". https://github.com/gaul/s3proxy
+
+Run Lambdas locally: https://github.com/mLupine/docker-lambda
 
 ## Design patters/frameworks
 ### Secure coding
