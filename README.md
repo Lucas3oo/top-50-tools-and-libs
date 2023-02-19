@@ -101,6 +101,9 @@ https://micronaut.io
 ### Mapstruct
 Mapping between DTOs and entities. Uses annotation processing and integrates nicly with Spring. https://mapstruct.org
 
+### TSID (Time-Sorted Unique Identifiers) 
+Generate TSID for your primary keys in the DB instead of integer or UUID or [ULID](https://github.com/ulid/spec). TSID is more compact compared to UUID/ULID but otherwise gives the benefits as ULID. https://github.com/vladmihalcea/hypersistence-tsid and Hibernate support: https://github.com/vladmihalcea/hypersistence-utils
+
 ### Debezium
 Distributed platform for change data capture. E.g. write once to DB to update a record and propagate an update event to Kafak. But it works with AWS Kinesis to with some extra work.
 * https://debezium.io
