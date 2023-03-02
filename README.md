@@ -22,7 +22,7 @@ Static code analyser. Find code smells and security issues.
  * Security extension: https://find-sec-bugs.github.io
  * Extension: https://github.com/mebigfatguy/fb-contrib
 #### Sonarlint
-Static code analyser. Find code smells and security issues.
+Static code analyser. Find code smells and security issues. Works on Java, Kotlin, Scala, TypeScript/JavaScript and more.
 https://plugins.gradle.org/plugin/se.solrike.sonarlint
 #### Checkstyle
 Static code analyser. More focus on style. E.g. checks for long methods. 
