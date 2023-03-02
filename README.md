@@ -109,7 +109,7 @@ Generate TSID for your primary keys in the DB instead of integer or UUID/GUID or
 * My blog post about TSID: https://www.linkedin.com/pulse/primary-keys-db-what-use-id-vs-uuid-something-else-lucas-persson/
 
 ### Debezium
-Distributed platform for change data capture. E.g. write once to DB to update a record and propagate an update event to Kafak. But it works with AWS Kinesis to with some extra work.
+Distributed platform for change data capture and outbox pattern. E.g. write once to DB to update a record and propagate an update event to Kafak. But it works with AWS Kinesis too with some extra work. Most DBs are supported like MySQL, PostgreSQL etc.
 * https://debezium.io
 * Debezium for MySQL: https://debezium.io/documentation/reference/2.1/connectors/mysql.html
 * Debezium for AWS Kinesis: https://debezium.io/blog/2018/08/30/streaming-mysql-data-changes-into-kinesis/
@@ -134,7 +134,7 @@ Distributed tracing framwork for your app to see how the app is interacting with
 ### Docker/Podman and Docker compose and kind for Kubernetes
 * https://podman.io and https://podman-desktop.io
 * https://www.docker.com
-* https://kind.sigs.k8s.io
+* https://kind.sigs.k8s.io (manage Kubernetes clusters locally using Docker)
 * Docker compose Gradle plugin:  https://plugins.gradle.org/plugin/com.avast.gradle.docker-compose
 
 ### Unit testing
