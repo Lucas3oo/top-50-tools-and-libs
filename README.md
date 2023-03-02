@@ -62,6 +62,7 @@ https://github.com/facebookincubator/nvdtools
 
 ### AWS Cloudformation
 #### Linters for Cloudformation templates
+Checks for insecure infrastructure like encryption that isn't enabled and security group rules that are too permissive.
 * https://github.com/aws-cloudformation/cfn-lint
 * https://github.com/stelligent/cfn_nag
 #### Deploy Cloudformation templates from Gradle
