@@ -103,7 +103,9 @@ https://micronaut.io. It also has support for the repository pattern in Micronau
 Mapping between DTOs and entities. Uses annotation processing and integrates nicly with Spring/Micronaut and Microprofile/CDI. https://mapstruct.org
 
 ### DeltaSpike
-In case your stuck with a platform without decent repository layer then use Apache DeltaSpike https://deltaspike.apache.org. Very similar to Spring-data and Quarkus' Panache. It is a layer on top of JPA so it works with both Hibernate and EclipseLink. But it is a bit outdated alas.
+In case your stuck with a platform without decent repository layer then use Apache DeltaSpike https://deltaspike.apache.org. Very similar to Spring-data and Quarkus' Panache. It is a layer on top of JPA so it works with both Hibernate and EclipseLink. But it is a bit outdated alas. Check out my [demo project](https://github.com/Lucas3oo/demo-hello-world-open-liberty) that uses DeltaSpike. 
+
+
 
 ### TSID (Time-Sorted Unique Identifiers) 
 Generate TSID for your primary keys in the DB instead of integer or UUID/GUID or [ULID](https://github.com/ulid/spec). TSID is more compact compared to UUID/ULID but otherwise gives the same benefits as ULID (i.e. better DB performance).
