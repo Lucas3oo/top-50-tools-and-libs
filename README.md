@@ -93,14 +93,17 @@ https://github.com/zalando/logbook
 ### Spring Boot
 Web app framwork for microservices. https://spring.io
 * Spring data - Layer on top of JPA
-* Spring data projections -  Generate DTOs directly from the SQL query 
+* Spring data projections -  Generate DTOs directly from the SQL query and a DTO class.
 
 ### Micronaut
 Like Spring Boot but doesn't use reflection so the slow start you can get in Spring Boot will not be there.
-https://micronaut.io
+https://micronaut.io. It also has support for the repository pattern in Micronaut-data.
 
 ### Mapstruct
-Mapping between DTOs and entities. Uses annotation processing and integrates nicly with Spring. https://mapstruct.org
+Mapping between DTOs and entities. Uses annotation processing and integrates nicly with Spring/Micronaut and Microprofile/CDI. https://mapstruct.org
+
+### DeltaSpike
+In case your stuck with a platform without decent repository layer then use Apache DeltaSpike https://deltaspike.apache.org. Very similar to Spring-data and Quarkus' Panache. It is a layer on top of JPA so it works with both Hibernate and EclipseLink. But it is a bit outdated alas.
 
 ### TSID (Time-Sorted Unique Identifiers) 
 Generate TSID for your primary keys in the DB instead of integer or UUID/GUID or [ULID](https://github.com/ulid/spec). TSID is more compact compared to UUID/ULID but otherwise gives the same benefits as ULID (i.e. better DB performance).
