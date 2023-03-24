@@ -87,7 +87,7 @@ Java logging framework.
 * Supports MDC (Mapped Diagnostic Context) - https://logback.qos.ch/manual/mdc.html
 * Format the log record to JSON and send it to the ELK stack, supports MDC. Works both as logback appender and also useful as an encoder. - https://github.com/logfellow/logstash-logback-encoder
 ### Logbook
-Logging of http requests.
+Logging of http requests. Works well with Spring but you need to create some additional classes. Doesn't seesm to work with Micronaut due to the Netty integration.
 https://github.com/zalando/logbook
 
 ### Spring Boot
