@@ -127,12 +127,14 @@ Search and visualize your log streams in a jiffy with ELK.
 * ElasticSearch, Kibana, Logstash - https://www.elastic.co/what-is/elk-stack
 
 ### AWS Parameter Store
-Read the config properties from a central location instead of having ENV-vars or configuration files. Works with e.g. Spring Boot. Particulary useful when you run Spring in as a contiainer and you need to have configuration externalized.
+Read the config properties from a central location instead of having ENV-vars or configuration files. Works with e.g. Spring Boot. Particulary useful when you run Spring in as a contiainer and you need to have configuration externalized. You can chose to save values encrypted in the store.
 * https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-working-with.html
 * Spring cloud AWS and Parameter store: https://docs.spring.io/spring-cloud-aws/docs/2.2.3.RELEASE/reference/html/#integrating-your-spring-cloud-application-with-the-aws-parameter-store
 
-### Azure App Confgiuration
-Same as AWS Parameter Store but for Azure. Has support for Spring. In fact it seems Microsoft does all the Azure-Spring integration libs themself as compared to the AWS support in Spring which is community driven.
+### Azure App Configuration
+Same as AWS Parameter Store but for Azure. Has support for Spring. In fact it seems Microsoft does all the Azure-Spring integration libs themself as compared to the AWS support in Spring which is community driven. https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview
+
+If you want secrests in App Configuration to be encrypted then you need to stored them in Azure Key Vault and put a "key vault reference" in the App Configuration. From the application (e.g. Spring) point of view it will be transparent except you need extra permissions assigned to the app for this to work.
 
 ### AWS X-Ray
 Distributed tracing framwork for your app to see how the app is interacting with AWS services and other custom services.
