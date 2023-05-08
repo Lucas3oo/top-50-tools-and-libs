@@ -56,9 +56,11 @@ Scan Docker images for known vulnerabilities.
 * Blog post about Trivy: https://www.linkedin.com/pulse/vulnerability-scanning-docker-images-lucas-persson/
 * https://aquasecurity.github.io/trivy/v0.37/
 
-#### NVD Tool
+#### NVD Tools
 Check your third party libs and OTS software for known vulnerabilities in the NVD feeds. For instance version 8 of MySQL or Java 17.
-https://github.com/facebookincubator/nvdtools
+https://github.com/facebookincubator/nvdtools.
+
+One alternative to this is to find the corresponding Docker image for say MySQL version 8 and scan the image with Trivy. But NVD Tools checks directly in the NIST NVD database so it will be faster.
 
 ### AWS Cloudformation
 #### Linters for Cloudformation templates
@@ -105,8 +107,6 @@ Mapping between DTOs and entities. Uses annotation processing and integrates nic
 ### DeltaSpike
 In case your stuck with a platform without decent repository layer then use Apache DeltaSpike https://deltaspike.apache.org. Very similar to Spring-data and Quarkus' Panache. It is a layer on top of JPA so it works with both Hibernate and EclipseLink. But it is a bit outdated alas. Check out my [demo project](https://github.com/Lucas3oo/demo-hello-world-open-liberty) that uses DeltaSpike. 
 
-
-
 ### TSID (Time-Sorted Unique Identifiers) 
 Generate TSID for your primary keys in the DB instead of integer or UUID/GUID or [ULID](https://github.com/ulid/spec). TSID is more compact compared to UUID/ULID but otherwise gives the same benefits as ULID (i.e. better DB performance).
 * https://github.com/vladmihalcea/hypersistence-tsid
@@ -130,6 +130,9 @@ Search and visualize your log streams in a jiffy with ELK.
 Read the config properties from a central location instead of having ENV-vars or configuration files. Works with e.g. Spring Boot. Particulary useful when you run Spring in as a contiainer and you need to have configuration externalized.
 * https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-working-with.html
 * Spring cloud AWS and Parameter store: https://docs.spring.io/spring-cloud-aws/docs/2.2.3.RELEASE/reference/html/#integrating-your-spring-cloud-application-with-the-aws-parameter-store
+
+### Azure App Confgiuration
+Same as AWS Parameter Store but for Azure. Has support for Spring. In fact it seems Microsoft does all the Azure-Spring integration libs themself as compared to the AWS support in Spring which is community driven.
 
 ### AWS X-Ray
 Distributed tracing framwork for your app to see how the app is interacting with AWS services and other custom services.
@@ -171,7 +174,7 @@ AWS S3 proxy which also emulates Azure storage accounts and other "flavours". ht
 
 Run Lambdas locally: https://github.com/mLupine/docker-lambda
 
-## Design patters/frameworks
+## Design patterns/frameworks
 ### Secure coding
 * https://www.oracle.com/java/technologies/javase/seccodeguide.html
 * https://owasp.org/www-project-top-ten/
