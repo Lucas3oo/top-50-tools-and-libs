@@ -167,7 +167,7 @@ Payed:
 
 AWS DynamoDB is possible to run locally without using Localstack: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
 
-AWS S3 proxy which also emulates Azure storage accounts and other "flavors". https://github.com/gaul/s3proxy
+AWS S3 proxy which also emulates Azure storage accounts and other "flavours". https://github.com/gaul/s3proxy
 
 Run Lambdas locally: https://github.com/mLupine/docker-lambda
 
