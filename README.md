@@ -192,7 +192,8 @@ Run Lambdas locally: https://github.com/mLupine/docker-lambda
 * AWS well architected - https://aws.amazon.com/architecture/well-architected
 
 ### Misc
-* Semantic Versioning 2.0.0 - https://semver.org
+* "Standard" for versioning: Semantic Versioning 2.0.0 - https://semver.org
+* "Standard" for change logs -  https://keepachangelog.com
 * Comments in code - https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/
 * A collection of full-stack resources for programmers - https://github.com/charlax/professional-programming (this one will keep you busy for weeks)
 * https://github.com/kamranahmedse/developer-roadmap
