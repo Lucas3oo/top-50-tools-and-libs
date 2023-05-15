@@ -102,7 +102,7 @@ Like Spring Boot but doesn't use reflection so the slow start you can get in Spr
 https://micronaut.io. It also has support for the repository pattern in Micronaut-data.
 
 ### NestJS
-Like Spring boot but for Node.js backends in TyepScript. https://nestjs.com. REST controllers look very simlar the corresponding in Spring boot and it has a repository layer (via TypeORM) similar to Spring-data and you will also use dependecy injection.
+Like Spring boot but for Node.js backends in TypeScript. https://nestjs.com. REST controllers look very simlar the corresponding in Spring boot and it has a repository layer (via TypeORM) similar to Spring-data and you will also use dependecy injection.
 
 ### Mapstruct
 Mapping between DTOs and entities. Uses annotation processing and integrates nicly with Spring/Micronaut and Microprofile/CDI. https://mapstruct.org
