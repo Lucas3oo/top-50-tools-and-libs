@@ -4,7 +4,7 @@ Curated list of tools and libs for software engineering.
 The list containes development, build and security tools, and libraries for different uses cases.
 Tools and libs are mosty for Java but some are more generic.
 
-Version: 1.0.0
+Version: 1.1.0
 
 ## Tools
 
@@ -66,7 +66,7 @@ One alternative to this is to find the corresponding Docker image for say MySQL 
 #### Linters for Cloudformation templates
 Checks for insecure infrastructure like encryption that isn't enabled and security group rules that are too permissive.
 * https://github.com/aws-cloudformation/cfn-lint
-* https://github.com/stelligent/cfn_nag
+* https://www.checkov.io - can check Terraform/ARM/Biceps too.
 #### Deploy Cloudformation templates from Gradle
 * https://plugins.gradle.org/plugin/se.solrike.cloudformation
 
@@ -178,6 +178,12 @@ AWS DynamoDB is possible to run locally without using Localstack: https://docs.a
 AWS S3 proxy which also emulates Azure storage accounts and other "flavours". https://github.com/gaul/s3proxy
 
 Run Lambdas locally: https://github.com/mLupine/docker-lambda
+
+### AWS serverless
+* https://aws.amazon.com/serverless/sam/ - AWS serverless application model
+* https://serverlessland.com - design patterns and sample code
+* https://sst.dev - development kit, fullstack app tooling, framework and deploymet support.
+* https://awslabs.github.io/aws-lambda-powertools-typescript/ - support libs for AWS serverless
 
 ## Design patterns/frameworks
 ### Secure coding
