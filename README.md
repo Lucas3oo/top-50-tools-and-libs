@@ -66,7 +66,7 @@ One alternative to this is to find the corresponding Docker image for say MySQL 
 #### Linters for Cloudformation templates
 Checks for insecure infrastructure like encryption that isn't enabled and security group rules that are too permissive.
 * https://github.com/aws-cloudformation/cfn-lint
-* https://www.checkov.io - can check Terraform/ARM/Biceps too.
+* https://www.checkov.io - can check Terraform/ARM/Biceps/Docker/Kubernetes too.
 #### Deploy Cloudformation templates from Gradle
 * https://plugins.gradle.org/plugin/se.solrike.cloudformation
 
