@@ -115,7 +115,7 @@ Generate TSID for your primary keys in the DB instead of integer or UUID/GUID or
 * My blog post about TSID: https://www.linkedin.com/pulse/primary-keys-db-what-use-id-vs-uuid-something-else-lucas-persson/
 
 ### Debezium
-Distributed platform for change data capture and outbox pattern. E.g. write once to DB to update a record and propagate an update event to Kafak. But it works with AWS Kinesis too with some extra work. Most DBs are supported like MySQL, PostgreSQL etc.
+Distributed platform for change data capture and outbox pattern. E.g. write once to DB to update a record and propagate an update event to Kafka. But it works with AWS Kinesis too with some extra work. Most DBs are supported like MySQL, PostgreSQL etc.
 * https://debezium.io
 * Debezium for MySQL: https://debezium.io/documentation/reference/2.1/connectors/mysql.html
 * Debezium for AWS Kinesis: https://debezium.io/blog/2018/08/30/streaming-mysql-data-changes-into-kinesis/
