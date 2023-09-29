@@ -38,11 +38,9 @@ Built into Gradle.
 #### AWS Cloudformation Gradle plugin
 Deploy Cloudformation templates and handle environment properties from Gradle.
 https://plugins.gradle.org/plugin/se.solrike.cloudformation
-
 #### AWS S3 Gradle plugin
 For instance upload a JAR to an S3 bucket.
 https://plugins.gradle.org/plugin/seek.aws
-
 #### Access git from Gradle
 https://plugins.gradle.org/plugin/org.ajoberstar.grgit
 
@@ -63,10 +61,10 @@ https://github.com/facebookincubator/nvdtools.
 One alternative to this is to find the corresponding Docker image for say MySQL version 8 and scan the image with Trivy. But NVD Tools checks directly in the NIST NVD database so it will be faster.
 
 ### AWS Cloudformation
-#### Linters for Cloudformation templates
+#### Static code analysers for IaC and specifically Cloudformation templates; Checkov and cfn-lint
 Checks for insecure infrastructure like encryption that isn't enabled and security group rules that are too permissive.
 * https://github.com/aws-cloudformation/cfn-lint
-* https://www.checkov.io - can check Terraform/ARM/Biceps/Docker/Kubernetes too.
+* https://www.checkov.io - can check Terraform/ARM/Biceps/Docker/Kubernetes too. And you can synthezie a stack from CDK and check it.
 #### Deploy Cloudformation templates from Gradle
 * https://plugins.gradle.org/plugin/se.solrike.cloudformation
 
